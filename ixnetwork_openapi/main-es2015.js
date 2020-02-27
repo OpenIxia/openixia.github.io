@@ -519,7 +519,7 @@ let AppComponent = class AppComponent {
         return nodes;
     }
     onDownload(event) {
-        window.open('/assets/resourcemanager.yaml', '_blank');
+        window.open('./assets/resourcemanager.yaml', '_blank');
     }
     get sample() {
         return this._sample;

@@ -994,7 +994,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "onDownload",
         value: function onDownload(event) {
-          window.open('/assets/resourcemanager.yaml', '_blank');
+          window.open('./assets/resourcemanager.yaml', '_blank');
         }
       }, {
         key: "onOpenApi",
