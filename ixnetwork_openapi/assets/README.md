@@ -1,5 +1,6 @@
-# Overview
+# ResourceManager API (9.20.2112.6)
 
+## Overview
 The resourcemanager importConfig API is used to efficiently create or update an IxNetwork configuration in one call.
 - The IxNetwork configuration is composed of schema objects detailed in this specification.
 
@@ -43,7 +44,7 @@ raw_traffic_objects = [
         'singleValue': '11009'
     }
 ]
-session.Ixnetwork.ResourceManager.ImportConfig(json.dumps(raw_traffic_objects), True) 
+session.Ixnetwork.ResourceManager.ImportConfig(json.dumps(raw_traffic_objects), True)
 ```
 ### Create an ipv4 traffic configuration
 ```python
@@ -150,7 +151,7 @@ config = json.loads(json_string)
 ```
 
 ## API Usage
-### A Configuration can be created or updated  
+### A Configuration can be created or updated
 ```python
 import json
 from ixnetwork_restpy import SessionAssistant
