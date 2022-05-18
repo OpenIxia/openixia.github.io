@@ -1,0 +1,53 @@
+openapi: "3.0.0"
+
+info:
+  title: "IxNetwork Protocol Template Open API spec"
+  version: "1.0.0"
+
+paths: {}
+
+components:
+  schemas:
+    Templates:
+        type: object
+        description: "Contains the list of the protocol templates"
+        properties:
+          stacks:
+            type: array
+            items:
+              $ref: "#/components/schemas/Stack"
+
+
+    Stack:
+        type: object
+        description: "Defines the protocol template"
+        properties:
+          stack_type_id:
+            type: string
+            description: "The stack type identifier for this protocol"
+          description:
+            type: string
+            description: "The display name of the protocol"
+          fields:
+            type: array
+            items:
+              $ref: "#/components/schemas/Field"
+
+
+
+    Field:
+        type: object
+        description: "Represents the field of the protocol"
+        properties:
+          field_type_id:
+            type: string
+            description: "The field type identifier for this field"
+          description:
+            type: string
+            description: "The display name of the field"
+          length:
+            type: string
+            description: "Length of the field"
+          default_value:
+            type: string
+            description: "Default value of the field"
