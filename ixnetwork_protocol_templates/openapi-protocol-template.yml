@@ -2,7 +2,7 @@ openapi: "3.0.0"
 
 info:
   title: "IxNetwork Protocol Template Open API spec"
-  version: "1.1.0"
+  version: "1.1.1"
 
 paths: {}
 
