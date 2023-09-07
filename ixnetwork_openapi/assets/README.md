@@ -1,4 +1,4 @@
-# ResourceManager API (9.20.2112.6)
+# ResourceManager API (9.30.2212.22)
 
 ## Overview
 The resourcemanager importConfig API is used to efficiently create or update an IxNetwork configuration in one call.
